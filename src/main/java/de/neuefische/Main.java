@@ -22,5 +22,10 @@ public class Main {
         MediaController mediaController = new MediaController();
         mediaController.playMedia(new VideoPlayer());
         mediaController.playMedia(new MusicPlayer());
+
+        VideoPlayer vp = new VideoPlayer();
+        Video video = new Video("Funny Cat Compilation", 2, "Silly Cats doing silly things!");
+        vp.loadVideo(video);
+        mediaController.playMedia(vp);
     }
 }
